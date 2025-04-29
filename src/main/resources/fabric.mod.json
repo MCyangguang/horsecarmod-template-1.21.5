@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "horsecarmod",
+	"version": "${version}",
+	"name": "HorseCarMod",
+	"description": "这是描述",
+	"authors": [
+		"MC阳光小杰MCyangguang"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/horsecarmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.mcyangguang.horsecar.HorseCarMod"
+		],
+		"fabric-datagen": [
+			"com.mcyangguang.horsecar.HorseCarModDataGenerator"
+		],
+		"client": [
+			"com.mcyangguang.horsecar.HorseCarModClient"
+		]
+	},
+	"mixins": [
+		"horsecarmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
